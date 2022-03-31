@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "veres2": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

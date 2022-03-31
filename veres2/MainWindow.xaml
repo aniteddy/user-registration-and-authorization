@@ -1,0 +1,35 @@
+﻿<Window x:Class="veres2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:veres2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="454" Width="372">
+    <Grid HorizontalAlignment="Stretch">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#FFB65074" Offset="1" />
+                <GradientStop Color="#FFD59DF0" Offset="0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="34" Margin="122,124,0,0" Text="Login" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" Background="#FFF1EAEA" BorderThickness="1,1,1,1" SnapsToDevicePixels="True" FontStyle="Italic">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="36" Margin="122,186,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" FontStyle="Italic"/>
+        <Button x:Name="signin" Content="Sign in" HorizontalAlignment="Left" Height="28" Margin="122,250,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Button x:Name="signup" Content="Sign up" HorizontalAlignment="Left" Height="26" Margin="122,298,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_1"/>
+        <Button x:Name="forgot" Content="Forgot password?" HorizontalAlignment="Left" Height="26" Margin="122,344,0,0" VerticalAlignment="Top" Width="130" Click="forgot_Click"/>
+        <Label Content="Enter login and password" HorizontalAlignment="Left" Height="40" Margin="80,70,0,0" VerticalAlignment="Top" Width="242" Background="Transparent" FontSize="14" FontStretch="SemiCondensed" FontFamily="Arial Black"/>
+        <Button x:Name="ok" Content="OK" HorizontalAlignment="Left" Height="26" Margin="122,298,0,0" VerticalAlignment="Top" Width="130" Click="signup_Copy_Click"/>
+        <Button x:Name="Forgot_OK" Content="OK" HorizontalAlignment="Left" Margin="122,344,0,0" VerticalAlignment="Top" Height="26" Width="130" Click="Forgot_OK_Click"/>
+
+    </Grid>
+</Window>

@@ -54,7 +54,7 @@ namespace veres2
             {
                 if (data[i].L == login.Text.ToString() && data[i].P == password.Text.ToString())
                 {
-                    MessageBox.Show("You are logged in",
+                    MessageBox.Show("Вы вошли в систему",
                         "Message",
                         MessageBoxButton.OK);
                     ErrorLP = false;
@@ -74,7 +74,7 @@ namespace veres2
             
             if (ErrorLP == true)
             {
-                MessageBox.Show("Error login or password",
+                MessageBox.Show("Неверный логин или пароль",
                     "Error!",
                     MessageBoxButton.OK);
                 ErrorLP = false;
@@ -91,7 +91,7 @@ namespace veres2
         {
             signup.Visibility = Visibility.Hidden;
             ok.Visibility = Visibility.Visible;
-            MessageBox.Show("Enter login and password",
+            MessageBox.Show("Введите логин и пароль",
                 "Message",
                         MessageBoxButton.OK);
 
@@ -106,7 +106,7 @@ namespace veres2
             Forgot_OK.Visibility = Visibility.Visible;
             forgot.Visibility = Visibility.Hidden;
 
-            MessageBox.Show("Enter login and new password",
+            MessageBox.Show("Введите логин и новый пароль",
                 "Message",
                         MessageBoxButton.OK);
 
@@ -149,7 +149,7 @@ namespace veres2
             //если логин существует, то сообщение, если не существует, то запись в файл
             if (Loginexist == true)
             {
-                MessageBox.Show("login already exists",
+                MessageBox.Show("Такой логин уже существует",
                         "Attention!",
                         MessageBoxButton.OK);
                 Loginexist = false;
@@ -157,7 +157,7 @@ namespace veres2
             else
             {
                 Loginexist = false;
-                MessageBox.Show("You have successfully registered",
+                MessageBox.Show("Вы успешно зарегистрировались",
                        "Message",
                        MessageBoxButton.OK);
                 WritingToFile();
@@ -185,7 +185,7 @@ namespace veres2
                     ForgotP = false;
                     Forgot_OK.Visibility = Visibility.Hidden;
                     forgot.Visibility = Visibility.Visible;
-                    MessageBox.Show("Password change, please sign in",
+                    MessageBox.Show("Пароль изменён, пожалуйста авторизуйтесь",
                         "Message",
                         MessageBoxButton.OK);
                     break;
@@ -198,7 +198,7 @@ namespace veres2
 
             if (ForgotP == true)
             {
-                MessageBox.Show("wrong login",
+                MessageBox.Show("Неправильный логин",
                         "Attention!",
                         MessageBoxButton.OK);
                 ForgotP = false;

@@ -8,12 +8,12 @@
         Title="MainWindow" Height="454" Width="372">
     <Grid HorizontalAlignment="Stretch">
         <Grid.Background>
-            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
-                <GradientStop Color="#FFB65074" Offset="1" />
-                <GradientStop Color="#FFD59DF0" Offset="0" />
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE9EBF5"/>
+                <GradientStop Color="#FF6572C3" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="login" HorizontalAlignment="Left" Height="34" Margin="122,124,0,0" Text="Login" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" Background="#FFF1EAEA" BorderThickness="1,1,1,1" SnapsToDevicePixels="True" FontStyle="Italic">
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="34" Margin="53,124,0,0" Text="Login" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" RenderTransformOrigin="0.5,0.5" Background="#FFF5ECEC" BorderThickness="1,1,1,1" SnapsToDevicePixels="True" FontStyle="Oblique" FontWeight="Regular" BorderBrush="#FFF1F2F5" FontFamily="Bahnschrift Light Condensed">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -23,13 +23,13 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="password" HorizontalAlignment="Left" Height="36" Margin="122,186,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" FontStyle="Italic"/>
-        <Button x:Name="signin" Content="Sign in" HorizontalAlignment="Left" Height="28" Margin="122,250,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
-        <Button x:Name="signup" Content="Sign up" HorizontalAlignment="Left" Height="26" Margin="122,298,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_1"/>
-        <Button x:Name="forgot" Content="Forgot password?" HorizontalAlignment="Left" Height="26" Margin="122,344,0,0" VerticalAlignment="Top" Width="130" Click="forgot_Click"/>
-        <Label Content="Enter login and password" HorizontalAlignment="Left" Height="40" Margin="80,70,0,0" VerticalAlignment="Top" Width="242" Background="Transparent" FontSize="14" FontStretch="SemiCondensed" FontFamily="Arial Black"/>
-        <Button x:Name="ok" Content="OK" HorizontalAlignment="Left" Height="26" Margin="122,298,0,0" VerticalAlignment="Top" Width="130" Click="signup_Copy_Click"/>
-        <Button x:Name="Forgot_OK" Content="OK" HorizontalAlignment="Left" Margin="122,344,0,0" VerticalAlignment="Top" Height="26" Width="130" Click="Forgot_OK_Click"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="36" Margin="53,186,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" FontStyle="Oblique" FontWeight="Regular" BorderBrush="#FFF1F2F5" FontFamily="Bahnschrift Light Condensed" Background="#FFF5ECEC"/>
+        <Button x:Name="signin" Content="Войти" HorizontalAlignment="Left" Height="28" Margin="53,245,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click" FontFamily="Bahnschrift Light Condensed" FontSize="14"/>
+        <Button x:Name="signup" Content="Зарегистрироваться" HorizontalAlignment="Left" Height="28" Margin="212,245,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_1" FontFamily="Bahnschrift Light Condensed" FontSize="14"/>
+        <Button x:Name="forgot" Content="Забыли пароль?" HorizontalAlignment="Left" Height="28" Margin="122,294,0,0" VerticalAlignment="Top" Width="130" Click="forgot_Click" FontFamily="Bahnschrift Light Condensed" FontSize="14"/>
+        <Label Content="Введите логин и пароль" HorizontalAlignment="Left" Height="28" Margin="130,81,0,0" VerticalAlignment="Top" Width="192" Background="Transparent" FontSize="14" FontStretch="SemiCondensed" FontFamily="Bahnschrift Light Condensed"/>
+        <Button x:Name="ok" Content="OK" HorizontalAlignment="Left" Height="28" Margin="212,245,0,0" VerticalAlignment="Top" Width="110" Click="signup_Copy_Click" FontFamily="Bahnschrift Light Condensed" FontSize="14" RenderTransformOrigin="0.315,0.585"/>
+        <Button x:Name="Forgot_OK" Content="OK" HorizontalAlignment="Left" Margin="122,294,0,0" VerticalAlignment="Top" Height="28" Width="130" Click="Forgot_OK_Click" FontFamily="Bahnschrift Light Condensed" FontSize="14"/>
 
     </Grid>
 </Window>
